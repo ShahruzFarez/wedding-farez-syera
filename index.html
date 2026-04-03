@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aturcara Majlis Perkahwinan</title>
+<title>Walimatul Urus Farez & Syera</title>
 
 <style>
 body {
@@ -15,26 +15,26 @@ body {
 
 .container {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px;
 }
 
 .card {
   background: white;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
   padding: 30px;
 }
 
 h1 {
   text-align: center;
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .subtitle {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   color: #8b6b4f;
 }
@@ -42,8 +42,8 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse;
-  overflow: hidden;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 th {
@@ -68,15 +68,56 @@ tr:hover {
   transition: 0.3s;
 }
 
+/* BUTTON STYLE */
+.location-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.rumah {
+  background: #c9a27c;
+}
+
+.masjid {
+  background: #8b6b4f;
+}
+
+.location-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+/* BIG BUTTON */
+.big-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.big-btn:hover {
+  transform: translateY(-3px);
+}
+
 .footer {
   text-align: center;
   margin-top: 30px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .highlight {
   color: #b07d4f;
+  font-size: 20px;
+  font-weight: bold;
 }
 </style>
 </head>
@@ -86,7 +127,7 @@ tr:hover {
 <div class="container">
   <div class="card">
 
-    <h1>Aturcara Majlis Perkahwinan</h1>
+    <h1>Walimatul Urus</h1>
     <div class="subtitle">Farez & Syera</div>
 
     <table>
@@ -94,14 +135,18 @@ tr:hover {
         <th>Masa</th>
         <th>Tarikh</th>
         <th>Aktiviti</th>
-        <th>Remarks</th>
+        <th>Lokasi</th>
       </tr>
 
       <tr>
         <td>8.30PM – 10.00PM</td>
         <td>10 April 2026 (Jumaat)</td>
         <td>Jamuan Makan Malam</td>
-        <td>Di Rumah Syera</td>
+        <td>
+          <a href="https://maps.app.goo.gl/zt6vXqHEYGqMm58B9" target="_blank" class="location-btn rumah">
+            📍 Rumah Syera
+          </a>
+        </td>
       </tr>
 
       <tr>
@@ -115,48 +160,63 @@ tr:hover {
         <td>9.00AM – 9.30AM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Keluarga Berkumpul di Masjid</td>
-        <td>Masjid Ar-Rahmaniah, Baling</td>
+        <td>
+          <a href="https://share.google/ErWNTnIHfbguvb1pf" target="_blank" class="location-btn masjid">
+            🕌 Masjid
+          </a>
+        </td>
       </tr>
 
       <tr>
         <td>10.00AM – 11.00AM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Majlis Akad Nikah</td>
-        <td>Masjid Ar-Rahmaniah, Baling</td>
+        <td>
+          <a href="https://share.google/ErWNTnIHfbguvb1pf" target="_blank" class="location-btn masjid">
+            🕌 Masjid
+          </a>
+        </td>
       </tr>
 
       <tr>
         <td>11.00AM – 12.30PM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Persiapan Majlis Bersanding</td>
-        <td>
-          • Farez di Studio (Pekan Baling)<br>
-          • Syera di Butik Pengantin
-        </td>
+        <td>Studio & Butik</td>
       </tr>
 
       <tr>
         <td>12.30PM – 1.30PM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Perarakan ke Pelamin</td>
-        <td>Bersama keluarga</td>
+        <td>-</td>
       </tr>
 
       <tr>
         <td>1.30PM – 4.00PM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Makan Beradab & Bersanding</td>
-        <td>Sesi fotografi bersama keluarga</td>
+        <td>-</td>
       </tr>
 
       <tr>
         <td>4.00PM – 6.30PM</td>
         <td>11 April 2026 (Sabtu)</td>
         <td>Sesi Photoshoot Outdoor</td>
-        <td>Pengantin sahaja</td>
+        <td>-</td>
       </tr>
-
     </table>
+
+    <!-- BIG BUTTON -->
+    <div style="text-align:center; margin-top:30px;">
+      <a href="https://maps.app.goo.gl/zt6vXqHEYGqMm58B9" target="_blank" class="big-btn rumah">
+        📍 Ke Rumah Syera
+      </a>
+
+      <a href="https://share.google/ErWNTnIHfbguvb1pf" target="_blank" class="big-btn masjid">
+        🕌 Ke Masjid
+      </a>
+    </div>
 
     <div class="footer">
       Dengan penuh kesyukuran ❤️<br>
